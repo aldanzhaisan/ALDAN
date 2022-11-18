@@ -16,7 +16,7 @@ class Main(Frame):
         btns = [
             "C", "DEL", "*", "=",
             "1", "2", "3", "/",
-            "4", "5", "6", "+",
+            "4", "5", "+",
             "7", "8", "9", "-",
             "(", "0", ")", "X^2"
         ]
@@ -30,7 +30,7 @@ class Main(Frame):
                    command=com).place(x=x, y=y,
                                       width=115,
                                       height=79)
-            x += 117
+            Y += 117
             if x > 400:
                 x = 10
                 y += 81
@@ -58,7 +58,7 @@ class Main(Frame):
 
 if __name__ == '__main__':
     root = Tk()
-    root["bg"] = "#000"
+    root["bg"] = "#001"
     root.geometry("485x550+200+200")
     root.title("Калькулятор")
     root.resizable(False, False)
